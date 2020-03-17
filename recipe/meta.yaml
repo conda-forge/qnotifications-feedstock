@@ -11,22 +11,12 @@ source:
   sha256: "506341143f0bd576db84e3f2680639a33953bfb06e2068b96d7f7612b9768aca"
 
 build:
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  number: 0
+  number: 1
 
 requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
-
   host:
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - xorg-libxfixes  # [linux]
     - pyqt
     - qtpy
     - pip
