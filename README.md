@@ -3,7 +3,7 @@ About qnotifications
 
 Home: https://github.com/dschreij/QNotifications
 
-Package license: GPLv3
+Package license: LGPLv3
 
 Feedstock license: BSD 3-Clause
 
