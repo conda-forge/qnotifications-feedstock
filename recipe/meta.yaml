@@ -1,6 +1,6 @@
 {% set name = "qnotifications" %}
 {% set pypiname = "python-" + name %}
-{% set version = "2.0.3" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz"
-  sha256: "506341143f0bd576db84e3f2680639a33953bfb06e2068b96d7f7612b9768aca"
+  sha256: "734888d9a67a41022b4d8cfc0e238f5fe234ec40d0398b7e997c9699f2ec9f6e"
 
 build:
   noarch: python
@@ -33,9 +33,9 @@ test:
 
 about:
   home: https://github.com/dschreij/QNotifications
-  license: GPLv3
+  license: LGPLv3
   license_family: GPL
-  license_file: LICENSE
+  license_file: license
   summary: 'Web-style in-app notifications for PyQt4/5'
 
 extra:
