@@ -3,9 +3,9 @@ About qnotifications
 
 Home: https://github.com/dschreij/QNotifications
 
-Package license: LGPLv3
+Package license: LGPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Web-style in-app notifications for PyQt4/5
 
